@@ -1,0 +1,59 @@
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    color: var(--fonteColor);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: var(--bg);
+}
+
+ul {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+li {
+    list-style-type: disc; /* ou circle, square */
+}
+
+.lista {
+    list-style-type: none; /* se quiser sem marcador */
+}
+
+#msg {
+    font-family: monospace;
+}
+
+.light-tema {
+    --bg: var(--white);
+    --fonteColor: var(--black);
+    --btnColor: var(--white);
+    --btnBg: var(--black);
+}
+
+.dark-tema {
+    --bg: var(--black);
+    --fonteColor: var(--green);
+    --btnColor: var(--white);
+    --btnBg: var(--green);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus {
+    outline: none;
+}
